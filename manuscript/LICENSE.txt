@@ -1,0 +1,6 @@
+© 2026 Haobo Ma and Wenlin Zhang.
+
+This note and its accompanying source and finite checkers are licensed under the
+Creative Commons Attribution 4.0 International license (CC BY 4.0).
+
+https://creativecommons.org/licenses/by/4.0/

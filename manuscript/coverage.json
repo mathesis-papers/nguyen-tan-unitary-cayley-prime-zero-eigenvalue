@@ -1,0 +1,64 @@
+{
+  "posing_source": {
+    "url": "https://arxiv.org/abs/2508.10348v1",
+    "locator": "Section 4.3, Question 4.17, page 19",
+    "coverage": "Answered: no"
+  },
+  "related_source_items": [
+    {
+      "url": "https://arxiv.org/abs/2603.21239v1",
+      "locator": "Section 2.2.4, Question 2.20, page 9",
+      "coverage": "Answered: no; the same commutative examples"
+    },
+    {
+      "url": "https://arxiv.org/abs/2508.10348v1",
+      "locator": "Section 2, Definition 2.1 and Remark 2.2, page 4",
+      "coverage": "Answered: yes; reproved, prior proof Hendrickson (2009), Theorem 10.3"
+    }
+  ],
+  "prior_sources": [
+    {
+      "url": "https://arxiv.org/abs/2212.02005v1",
+      "locator": "Corollary 2.5, page 5; Theorem 3.5, page 8",
+      "scope": "The generalized Paley cycle example and its spectrum; Corollary 2.6 in version 2"
+    },
+    {
+      "url": "https://arxiv.org/abs/1407.5295v5",
+      "locator": "Section 2, equation (4), page 5",
+      "scope": "The binary cyclic polynomial-ring construction and basis connection set; earlier displayed in version 1, Notation 2.2"
+    },
+    {
+      "url": "https://doi.org/10.26493/1855-3974.100.7f8",
+      "locator": "Theorem 2.2 and Lemma 3.1",
+      "scope": "Tensor eigenvalues of Cartesian sums and Hamming identification"
+    },
+    {
+      "url": "https://arxiv.org/abs/2401.06062v1",
+      "locator": "Corollary 4.3, page 14",
+      "scope": "Nonprime connected and anti-connected ring Cayley graphs have nullity at least half their order"
+    },
+    {
+      "url": "https://arxiv.org/abs/0905.3538v1",
+      "locator": "Theorem 10.3, page 19; paragraph after Corollary 10.5, page 20",
+      "scope": "Dual supercharacter constancy"
+    }
+  ],
+  "coverage": {
+    "result": "Answered: no; short proof and extensions of earlier constructions",
+    "written_proofs": [
+      "cycle family for all n ≥ 5",
+      "cycle nullity criterion",
+      "prime-power Frobenius group algebra",
+      "scalar-basis unit subgroup and Hamming identification",
+      "Hamming connectedness and anti-connectedness",
+      "complete tensor spectrum and multiplicities",
+      "Hamming primeness from the prior nullity bound",
+      "prime-power singularity criterion and exact nullity",
+      "cyclic polynomial quotient",
+      "Hendrickson duality and the affirmative answer to Remark 2.2"
+    ],
+    "lean_declaration": "D5.S3.ArithUnits.NguyenTanUnitaryCayleyPrimeSpectrum.result",
+    "lean_statement": "The affirmative form of Question 4.17 is false. The supporting group-algebra lemma covers the binary Frobenius, connectivity, primeness and zero-eigenvalue family for finite abelian groups of even order at least four; the exported result uses the cyclic order-four instance.",
+    "finite_checks": "Exact cycle ranks for orders 3–32 and homogeneous subsets through 16; binary eigenvectors in dimensions 1–8 and homogeneous subsets through dimension 4; integer tensor eigenvectors in the listed Hamming parameters; explicit binary and ternary rings; character partitions of elementary binary groups of dimensions 1–3."
+  }
+}

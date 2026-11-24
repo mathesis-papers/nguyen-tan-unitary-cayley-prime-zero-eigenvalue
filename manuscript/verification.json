@@ -1,0 +1,1300 @@
+{
+  "arithmetic": "exact integers and rational Gaussian elimination",
+  "binary": {
+    "cube_checks": [
+      {
+        "character_eigenvector_equations": 4,
+        "complement_connected": false,
+        "connected": true,
+        "dimension": 1,
+        "eigenvalue_multiplicities": {
+          "-1": 1,
+          "1": 1
+        },
+        "homogeneous_sets": [],
+        "nontrivial_subsets_tested": 0,
+        "vertices": 2
+      },
+      {
+        "character_eigenvector_equations": 16,
+        "complement_connected": false,
+        "connected": true,
+        "dimension": 2,
+        "eigenvalue_multiplicities": {
+          "-2": 1,
+          "0": 2,
+          "2": 1
+        },
+        "homogeneous_sets": [
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "nontrivial_subsets_tested": 10,
+        "vertices": 4
+      },
+      {
+        "character_eigenvector_equations": 64,
+        "complement_connected": true,
+        "connected": true,
+        "dimension": 3,
+        "eigenvalue_multiplicities": {
+          "-1": 3,
+          "-3": 1,
+          "1": 3,
+          "3": 1
+        },
+        "homogeneous_sets": [],
+        "nontrivial_subsets_tested": 246,
+        "vertices": 8
+      },
+      {
+        "character_eigenvector_equations": 256,
+        "complement_connected": true,
+        "connected": true,
+        "dimension": 4,
+        "eigenvalue_multiplicities": {
+          "-2": 4,
+          "-4": 1,
+          "0": 6,
+          "2": 4,
+          "4": 1
+        },
+        "homogeneous_sets": [],
+        "nontrivial_subsets_tested": 65518,
+        "vertices": 16
+      },
+      {
+        "character_eigenvector_equations": 1024,
+        "complement_connected": true,
+        "connected": true,
+        "dimension": 5,
+        "eigenvalue_multiplicities": {
+          "-1": 10,
+          "-3": 5,
+          "-5": 1,
+          "1": 10,
+          "3": 5,
+          "5": 1
+        },
+        "vertices": 32
+      },
+      {
+        "character_eigenvector_equations": 4096,
+        "complement_connected": true,
+        "connected": true,
+        "dimension": 6,
+        "eigenvalue_multiplicities": {
+          "-2": 15,
+          "-4": 6,
+          "-6": 1,
+          "0": 20,
+          "2": 15,
+          "4": 6,
+          "6": 1
+        },
+        "vertices": 64
+      },
+      {
+        "character_eigenvector_equations": 16384,
+        "complement_connected": true,
+        "connected": true,
+        "dimension": 7,
+        "eigenvalue_multiplicities": {
+          "-1": 35,
+          "-3": 21,
+          "-5": 7,
+          "-7": 1,
+          "1": 35,
+          "3": 21,
+          "5": 7,
+          "7": 1
+        },
+        "vertices": 128
+      },
+      {
+        "character_eigenvector_equations": 65536,
+        "complement_connected": true,
+        "connected": true,
+        "dimension": 8,
+        "eigenvalue_multiplicities": {
+          "-2": 56,
+          "-4": 28,
+          "-6": 8,
+          "-8": 1,
+          "0": 70,
+          "2": 56,
+          "4": 28,
+          "6": 8,
+          "8": 1
+        },
+        "vertices": 256
+      }
+    ],
+    "cyclic_group_algebra_check": {
+      "adjacency_nullity": 6,
+      "adjacency_rank_over_Q": 10,
+      "associativity_triples": 4096,
+      "basis_unit_subgroup": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "distributivity_triples": 4096,
+      "elements": 16,
+      "encoding": "bit i is the coefficient of x^i; identity=1; addition=XOR",
+      "frobenius_functional": "coefficient of x^0",
+      "frobenius_witnesses": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 2,
+          "multiplier": 8
+        },
+        {
+          "element": 3,
+          "multiplier": 1
+        },
+        {
+          "element": 4,
+          "multiplier": 4
+        },
+        {
+          "element": 5,
+          "multiplier": 1
+        },
+        {
+          "element": 6,
+          "multiplier": 8
+        },
+        {
+          "element": 7,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 2
+        },
+        {
+          "element": 9,
+          "multiplier": 1
+        },
+        {
+          "element": 10,
+          "multiplier": 8
+        },
+        {
+          "element": 11,
+          "multiplier": 1
+        },
+        {
+          "element": 12,
+          "multiplier": 4
+        },
+        {
+          "element": 13,
+          "multiplier": 1
+        },
+        {
+          "element": 14,
+          "multiplier": 8
+        },
+        {
+          "element": 15,
+          "multiplier": 1
+        }
+      ],
+      "ring": "F_2[x]/(x^4-1)",
+      "units": [
+        1,
+        2,
+        4,
+        7,
+        8,
+        11,
+        13,
+        14
+      ],
+      "zero_eigenvector": [
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        1
+      ]
+    }
+  },
+  "cycle_checks": [
+    {
+      "adjacency_rank_over_Q": 3,
+      "complement_connected": false,
+      "connected": true,
+      "homogeneous_sets": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "nontrivial_subsets_tested": 3,
+      "nullity": 0,
+      "ring": "Z/3Z",
+      "unit_subgroup": [
+        1,
+        2
+      ],
+      "vertices": 3
+    },
+    {
+      "adjacency_rank_over_Q": 2,
+      "complement_connected": false,
+      "connected": true,
+      "homogeneous_sets": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "integer_null_basis": [
+        [
+          1,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -1
+        ]
+      ],
+      "nontrivial_subsets_tested": 10,
+      "nullity": 2,
+      "ring": "Z/4Z",
+      "unit_subgroup": [
+        1,
+        3
+      ],
+      "vertices": 4
+    },
+    {
+      "adjacency_rank_over_Q": 5,
+      "complement_connected": true,
+      "connected": true,
+      "homogeneous_sets": [],
+      "nontrivial_subsets_tested": 25,
+      "nullity": 0,
+      "ring": "Z/5Z",
+      "unit_subgroup": [
+        1,
+        4
+      ],
+      "vertices": 5
+    },
+    {
+      "adjacency_rank_over_Q": 6,
+      "complement_connected": true,
+      "connected": true,
+      "homogeneous_sets": [],
+      "nontrivial_subsets_tested": 56,
+      "nullity": 0,
+      "ring": "Z/6Z",
+      "unit_subgroup": [
+        1,
+        5
+      ],
+      "vertices": 6
+    },
+    {
+      "adjacency_rank_over_Q": 7,
+      "complement_connected": true,
+      "connected": true,
+      "homogeneous_sets": [],
+      "nontrivial_subsets_tested": 119,
+      "nullity": 0,
+      "ring": "Z/7Z",
+      "unit_subgroup": [
+        1,
+        6
+      ],
+      "vertices": 7
+    },
+    {
+      "adjacency_rank_over_Q": 6,
+      "complement_connected": true,
+      "connected": true,
+      "homogeneous_sets": [],
+      "integer_null_basis": [
+        [
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1
+        ]
+      ],
+      "nontrivial_subsets_tested": 246,
+      "nullity": 2,
+      "ring": "Z/8Z",
+      "unit_subgroup": [
+        1,
+        7
+      ],
+      "vertices": 8
+    },
+    {
+      "adjacency_rank_over_Q": 9,
+      "complement_connected": true,
+      "connected": true,
+      "homogeneous_sets": [],
+      "nontrivial_subsets_tested": 501,
+      "nullity": 0,
+      "ring": "Z/9Z",
+      "unit_subgroup": [
+        1,
+        8
+      ],
+      "vertices": 9
+    },
+    {
+      "adjacency_rank_over_Q": 10,
+      "complement_connected": true,
+      "connected": true,
+      "homogeneous_sets": [],
+      "nontrivial_subsets_tested": 1012,
+      "nullity": 0,
+      "ring": "Z/10Z",
+      "unit_subgroup": [
+        1,
+        9
+      ],
+      "vertices": 10
+    },
+    {
+      "adjacency_rank_over_Q": 11,
+      "complement_connected": true,
+      "connected": true,
+      "homogeneous_sets": [],
+      "nontrivial_subsets_tested": 2035,
+      "nullity": 0,
+      "ring": "Z/11Z",
+      "unit_subgroup": [
+        1,
+        10
+      ],
+      "vertices": 11
+    },
+    {
+      "adjacency_rank_over_Q": 10,
+      "complement_connected": true,
+      "connected": true,
+      "homogeneous_sets": [],
+      "integer_null_basis": [
+        [
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1
+        ]
+      ],
+      "nontrivial_subsets_tested": 4082,
+      "nullity": 2,
+      "ring": "Z/12Z",
+      "unit_subgroup": [
+        1,
+        11
+      ],
+      "vertices": 12
+    },
+    {
+      "adjacency_rank_over_Q": 13,
+      "complement_connected": true,
+      "connected": true,
+      "homogeneous_sets": [],
+      "nontrivial_subsets_tested": 8177,
+      "nullity": 0,
+      "ring": "Z/13Z",
+      "unit_subgroup": [
+        1,
+        12
+      ],
+      "vertices": 13
+    },
+    {
+      "adjacency_rank_over_Q": 14,
+      "complement_connected": true,
+      "connected": true,
+      "homogeneous_sets": [],
+      "nontrivial_subsets_tested": 16368,
+      "nullity": 0,
+      "ring": "Z/14Z",
+      "unit_subgroup": [
+        1,
+        13
+      ],
+      "vertices": 14
+    },
+    {
+      "adjacency_rank_over_Q": 15,
+      "complement_connected": true,
+      "connected": true,
+      "homogeneous_sets": [],
+      "nontrivial_subsets_tested": 32751,
+      "nullity": 0,
+      "ring": "Z/15Z",
+      "unit_subgroup": [
+        1,
+        14
+      ],
+      "vertices": 15
+    },
+    {
+      "adjacency_rank_over_Q": 14,
+      "complement_connected": true,
+      "connected": true,
+      "homogeneous_sets": [],
+      "integer_null_basis": [
+        [
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1
+        ]
+      ],
+      "nontrivial_subsets_tested": 65518,
+      "nullity": 2,
+      "ring": "Z/16Z",
+      "unit_subgroup": [
+        1,
+        15
+      ],
+      "vertices": 16
+    },
+    {
+      "adjacency_rank_over_Q": 17,
+      "complement_connected": true,
+      "connected": true,
+      "nullity": 0,
+      "ring": "Z/17Z",
+      "unit_subgroup": [
+        1,
+        16
+      ],
+      "vertices": 17
+    },
+    {
+      "adjacency_rank_over_Q": 18,
+      "complement_connected": true,
+      "connected": true,
+      "nullity": 0,
+      "ring": "Z/18Z",
+      "unit_subgroup": [
+        1,
+        17
+      ],
+      "vertices": 18
+    },
+    {
+      "adjacency_rank_over_Q": 19,
+      "complement_connected": true,
+      "connected": true,
+      "nullity": 0,
+      "ring": "Z/19Z",
+      "unit_subgroup": [
+        1,
+        18
+      ],
+      "vertices": 19
+    },
+    {
+      "adjacency_rank_over_Q": 18,
+      "complement_connected": true,
+      "connected": true,
+      "integer_null_basis": [
+        [
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1
+        ]
+      ],
+      "nullity": 2,
+      "ring": "Z/20Z",
+      "unit_subgroup": [
+        1,
+        19
+      ],
+      "vertices": 20
+    },
+    {
+      "adjacency_rank_over_Q": 21,
+      "complement_connected": true,
+      "connected": true,
+      "nullity": 0,
+      "ring": "Z/21Z",
+      "unit_subgroup": [
+        1,
+        20
+      ],
+      "vertices": 21
+    },
+    {
+      "adjacency_rank_over_Q": 22,
+      "complement_connected": true,
+      "connected": true,
+      "nullity": 0,
+      "ring": "Z/22Z",
+      "unit_subgroup": [
+        1,
+        21
+      ],
+      "vertices": 22
+    },
+    {
+      "adjacency_rank_over_Q": 23,
+      "complement_connected": true,
+      "connected": true,
+      "nullity": 0,
+      "ring": "Z/23Z",
+      "unit_subgroup": [
+        1,
+        22
+      ],
+      "vertices": 23
+    },
+    {
+      "adjacency_rank_over_Q": 22,
+      "complement_connected": true,
+      "connected": true,
+      "integer_null_basis": [
+        [
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1
+        ]
+      ],
+      "nullity": 2,
+      "ring": "Z/24Z",
+      "unit_subgroup": [
+        1,
+        23
+      ],
+      "vertices": 24
+    },
+    {
+      "adjacency_rank_over_Q": 25,
+      "complement_connected": true,
+      "connected": true,
+      "nullity": 0,
+      "ring": "Z/25Z",
+      "unit_subgroup": [
+        1,
+        24
+      ],
+      "vertices": 25
+    },
+    {
+      "adjacency_rank_over_Q": 26,
+      "complement_connected": true,
+      "connected": true,
+      "nullity": 0,
+      "ring": "Z/26Z",
+      "unit_subgroup": [
+        1,
+        25
+      ],
+      "vertices": 26
+    },
+    {
+      "adjacency_rank_over_Q": 27,
+      "complement_connected": true,
+      "connected": true,
+      "nullity": 0,
+      "ring": "Z/27Z",
+      "unit_subgroup": [
+        1,
+        26
+      ],
+      "vertices": 27
+    },
+    {
+      "adjacency_rank_over_Q": 26,
+      "complement_connected": true,
+      "connected": true,
+      "integer_null_basis": [
+        [
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1
+        ]
+      ],
+      "nullity": 2,
+      "ring": "Z/28Z",
+      "unit_subgroup": [
+        1,
+        27
+      ],
+      "vertices": 28
+    },
+    {
+      "adjacency_rank_over_Q": 29,
+      "complement_connected": true,
+      "connected": true,
+      "nullity": 0,
+      "ring": "Z/29Z",
+      "unit_subgroup": [
+        1,
+        28
+      ],
+      "vertices": 29
+    },
+    {
+      "adjacency_rank_over_Q": 30,
+      "complement_connected": true,
+      "connected": true,
+      "nullity": 0,
+      "ring": "Z/30Z",
+      "unit_subgroup": [
+        1,
+        29
+      ],
+      "vertices": 30
+    },
+    {
+      "adjacency_rank_over_Q": 31,
+      "complement_connected": true,
+      "connected": true,
+      "nullity": 0,
+      "ring": "Z/31Z",
+      "unit_subgroup": [
+        1,
+        30
+      ],
+      "vertices": 31
+    },
+    {
+      "adjacency_rank_over_Q": 30,
+      "complement_connected": true,
+      "connected": true,
+      "integer_null_basis": [
+        [
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1
+        ]
+      ],
+      "nullity": 2,
+      "ring": "Z/32Z",
+      "unit_subgroup": [
+        1,
+        31
+      ],
+      "vertices": 32
+    }
+  ],
+  "hamming_checks": [
+    {
+      "alphabet": 3,
+      "complement_connected": false,
+      "connected": true,
+      "dimension": 1,
+      "eigenvalue_multiplicities": {
+        "-1": 2,
+        "2": 1
+      },
+      "homogeneous_sets": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "integer_tensor_eigenvector_equations": 9,
+      "nontrivial_subsets_tested": 3,
+      "nullity": 0,
+      "nullity_less_than_half": true,
+      "vertices": 3
+    },
+    {
+      "alphabet": 3,
+      "complement_connected": true,
+      "connected": true,
+      "dimension": 2,
+      "eigenvalue_multiplicities": {
+        "-2": 4,
+        "1": 4,
+        "4": 1
+      },
+      "homogeneous_sets": [],
+      "integer_tensor_eigenvector_equations": 81,
+      "nontrivial_subsets_tested": 501,
+      "nullity": 0,
+      "nullity_less_than_half": true,
+      "vertices": 9
+    },
+    {
+      "adjacency_rank_over_Q": 15,
+      "alphabet": 3,
+      "complement_connected": true,
+      "connected": true,
+      "dimension": 3,
+      "eigenvalue_multiplicities": {
+        "-3": 8,
+        "0": 12,
+        "3": 6,
+        "6": 1
+      },
+      "integer_tensor_eigenvector_equations": 729,
+      "nullity": 12,
+      "nullity_less_than_half": true,
+      "vertices": 27
+    },
+    {
+      "alphabet": 3,
+      "complement_connected": true,
+      "connected": true,
+      "dimension": 4,
+      "eigenvalue_multiplicities": {
+        "-1": 32,
+        "-4": 16,
+        "2": 24,
+        "5": 8,
+        "8": 1
+      },
+      "integer_tensor_eigenvector_equations": 6561,
+      "nullity": 0,
+      "nullity_less_than_half": true,
+      "vertices": 81
+    },
+    {
+      "alphabet": 4,
+      "complement_connected": true,
+      "connected": true,
+      "dimension": 2,
+      "eigenvalue_multiplicities": {
+        "-2": 9,
+        "2": 6,
+        "6": 1
+      },
+      "homogeneous_sets": [],
+      "integer_tensor_eigenvector_equations": 256,
+      "nontrivial_subsets_tested": 65518,
+      "nullity": 0,
+      "nullity_less_than_half": true,
+      "vertices": 16
+    },
+    {
+      "alphabet": 4,
+      "complement_connected": true,
+      "connected": true,
+      "dimension": 3,
+      "eigenvalue_multiplicities": {
+        "-3": 27,
+        "1": 27,
+        "5": 9,
+        "9": 1
+      },
+      "integer_tensor_eigenvector_equations": 4096,
+      "nullity": 0,
+      "nullity_less_than_half": true,
+      "vertices": 64
+    },
+    {
+      "alphabet": 4,
+      "complement_connected": true,
+      "connected": true,
+      "dimension": 4,
+      "eigenvalue_multiplicities": {
+        "-4": 81,
+        "0": 108,
+        "12": 1,
+        "4": 54,
+        "8": 12
+      },
+      "integer_tensor_eigenvector_equations": 65536,
+      "nullity": 108,
+      "nullity_less_than_half": true,
+      "vertices": 256
+    },
+    {
+      "alphabet": 5,
+      "complement_connected": true,
+      "connected": true,
+      "dimension": 2,
+      "eigenvalue_multiplicities": {
+        "-2": 16,
+        "3": 8,
+        "8": 1
+      },
+      "integer_tensor_eigenvector_equations": 625,
+      "nullity": 0,
+      "nullity_less_than_half": true,
+      "vertices": 25
+    },
+    {
+      "alphabet": 5,
+      "complement_connected": true,
+      "connected": true,
+      "dimension": 3,
+      "eigenvalue_multiplicities": {
+        "-3": 64,
+        "12": 1,
+        "2": 48,
+        "7": 12
+      },
+      "integer_tensor_eigenvector_equations": 15625,
+      "nullity": 0,
+      "nullity_less_than_half": true,
+      "vertices": 125
+    }
+  ],
+  "scope": "Exact cycle adjacency ranks in orders 3 through 32 and exhaustive homogeneous sets through order 16; finite tensor eigenvector, connectivity and nullity checks in the listed Hamming parameters; binary dimensions 1 through 8, exhaustive binary homogeneous sets through dimension 4, ternary cyclic ring and elementary binary character partitions. The general theorems have written proofs in note.tex.",
+  "supercharacter_duality": [
+    {
+      "dual_constancy_equalities": 4,
+      "dual_partitions_enumerated": 2,
+      "group": "C_2^1",
+      "supercharacter_theories": 1
+    },
+    {
+      "dual_constancy_equalities": 60,
+      "dual_partitions_enumerated": 15,
+      "group": "C_2^2",
+      "supercharacter_theories": 5
+    },
+    {
+      "dual_constancy_equalities": 3552,
+      "dual_partitions_enumerated": 4140,
+      "group": "C_2^3",
+      "supercharacter_theories": 100
+    }
+  ],
+  "ternary_group_algebra": {
+    "associativity_triples": 19683,
+    "element_encoding": "lexicographic coefficient triples (a_0,a_1,a_2)",
+    "elements": 27,
+    "frobenius_witnesses": [
+      {
+        "element": 1,
+        "multiplier": 3
+      },
+      {
+        "element": 2,
+        "multiplier": 3
+      },
+      {
+        "element": 3,
+        "multiplier": 1
+      },
+      {
+        "element": 4,
+        "multiplier": 1
+      },
+      {
+        "element": 5,
+        "multiplier": 1
+      },
+      {
+        "element": 6,
+        "multiplier": 1
+      },
+      {
+        "element": 7,
+        "multiplier": 1
+      },
+      {
+        "element": 8,
+        "multiplier": 1
+      },
+      {
+        "element": 9,
+        "multiplier": 9
+      },
+      {
+        "element": 10,
+        "multiplier": 3
+      },
+      {
+        "element": 11,
+        "multiplier": 3
+      },
+      {
+        "element": 12,
+        "multiplier": 1
+      },
+      {
+        "element": 13,
+        "multiplier": 1
+      },
+      {
+        "element": 14,
+        "multiplier": 1
+      },
+      {
+        "element": 15,
+        "multiplier": 1
+      },
+      {
+        "element": 16,
+        "multiplier": 1
+      },
+      {
+        "element": 17,
+        "multiplier": 1
+      },
+      {
+        "element": 18,
+        "multiplier": 9
+      },
+      {
+        "element": 19,
+        "multiplier": 3
+      },
+      {
+        "element": 20,
+        "multiplier": 3
+      },
+      {
+        "element": 21,
+        "multiplier": 1
+      },
+      {
+        "element": 22,
+        "multiplier": 1
+      },
+      {
+        "element": 23,
+        "multiplier": 1
+      },
+      {
+        "element": 24,
+        "multiplier": 1
+      },
+      {
+        "element": 25,
+        "multiplier": 1
+      },
+      {
+        "element": 26,
+        "multiplier": 1
+      }
+    ],
+    "identity_encoding": 9,
+    "ring": "F_3[x]/(x^3-1)",
+    "ring_graph_hamming_agreements": 729,
+    "scalar_basis_unit_subgroup": [
+      1,
+      2,
+      3,
+      6,
+      9,
+      18
+    ]
+  }
+}

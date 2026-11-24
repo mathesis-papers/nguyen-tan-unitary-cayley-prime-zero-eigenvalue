@@ -1,0 +1,204 @@
+{
+  "nodes": [
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s1",
+      "contributor": null,
+      "identity": "collected:nguyen-tan-unitary-cayley-prime-zero-eigenvalue:2:s1",
+      "kind": "paper",
+      "label": "Lemma",
+      "lean_source": {
+        "revision": "2eae85555e169007ff5548c46eb63cd2408f877f",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/2eae85555e169007ff5548c46eb63cd2408f877f/D5/S3/ArithUnits/NguyenTanUnitaryCayleyPrimeSpectrum.lean#L669"
+      },
+      "lineage": "collected:nguyen-tan-unitary-cayley-prime-zero-eigenvalue:s1",
+      "macros": {
+        "\\C": "\\mathbb C",
+        "\\F": "\\mathbb F"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "nguyen-tan-unitary-cayley-prime-zero-eigenvalue",
+      "scope": "in_scope",
+      "statement": "A connected triangle-free graph with no distinct vertices having the\nsame open neighborhood is prime.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Hamming extensions and a short proof from Mináč et al.'s cycle answering Nguyen and Tân's primeness question",
+      "toolchain": null,
+      "version": 2,
+      "work": "nguyen-tan-unitary-cayley-prime-zero-eigenvalue"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s2",
+      "contributor": null,
+      "identity": "collected:nguyen-tan-unitary-cayley-prime-zero-eigenvalue:2:s2",
+      "kind": "paper",
+      "label": "Theorem",
+      "lean_source": {
+        "revision": "2eae85555e169007ff5548c46eb63cd2408f877f",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/2eae85555e169007ff5548c46eb63cd2408f877f/D5/S3/ArithUnits/NguyenTanUnitaryCayleyPrimeSpectrum.lean#L669"
+      },
+      "lineage": "collected:nguyen-tan-unitary-cayley-prime-zero-eigenvalue:s2",
+      "macros": {
+        "\\C": "\\mathbb C",
+        "\\F": "\\mathbb F"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "nguyen-tan-unitary-cayley-prime-zero-eigenvalue",
+      "scope": "in_scope",
+      "statement": "For every $n\\geq5$, $R=\\mathbb Z/n\\mathbb Z$ is Frobenius and\n$U=\\{1,-1\\}$ is a subgroup of its units. The graph $\\Gamma(R,U)=C_n$\nis connected, anti-connected and prime. Its adjacency nullity is two\nwhen $4\\mid n$, and zero otherwise. In particular, every $C_{4m}$,\n$m\\geq2$, answers both primeness questions negatively.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Hamming extensions and a short proof from Mináč et al.'s cycle answering Nguyen and Tân's primeness question",
+      "toolchain": null,
+      "version": 2,
+      "work": "nguyen-tan-unitary-cayley-prime-zero-eigenvalue"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s3",
+      "contributor": null,
+      "identity": "collected:nguyen-tan-unitary-cayley-prime-zero-eigenvalue:2:s3",
+      "kind": "paper",
+      "label": "Theorem",
+      "lean_source": {
+        "revision": "2eae85555e169007ff5548c46eb63cd2408f877f",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/2eae85555e169007ff5548c46eb63cd2408f877f/D5/S3/ArithUnits/NguyenTanUnitaryCayleyPrimeSpectrum.lean#L669"
+      },
+      "lineage": "collected:nguyen-tan-unitary-cayley-prime-zero-eigenvalue:s3",
+      "macros": {
+        "\\C": "\\mathbb C",
+        "\\F": "\\mathbb F"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "nguyen-tan-unitary-cayley-prime-zero-eigenvalue",
+      "scope": "in_scope",
+      "statement": "Let $q$ be a prime power and $G$ a finite abelian group of order $d$.\nThe ring $R=\\F_q[G]$ is Frobenius, and $\\Gamma(R,U)\\cong H(d,q)$\nhas adjacency eigenvalues\n\\[\n \\lambda_k=d(q-1)-qk,\\qquad\n \\text{multiplicity }b_k=\\binom dk(q-1)^k,\\qquad 0\\leq k\\leq d.\n\\]\nIf $d\\geq2$ and $(d,q)\\neq(2,2)$, this graph is connected,\nanti-connected and prime. It is singular exactly when $q\\mid d$,\nand then its nullity is $b_{d(q-1)/q}<q^d/2$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Hamming extensions and a short proof from Mináč et al.'s cycle answering Nguyen and Tân's primeness question",
+      "toolchain": null,
+      "version": 2,
+      "work": "nguyen-tan-unitary-cayley-prime-zero-eigenvalue"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s4",
+      "contributor": null,
+      "identity": "collected:nguyen-tan-unitary-cayley-prime-zero-eigenvalue:2:s4",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "2eae85555e169007ff5548c46eb63cd2408f877f",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/2eae85555e169007ff5548c46eb63cd2408f877f/D5/S3/ArithUnits/NguyenTanUnitaryCayleyPrimeSpectrum.lean#L669"
+      },
+      "lineage": "collected:nguyen-tan-unitary-cayley-prime-zero-eigenvalue:s4",
+      "macros": {
+        "\\C": "\\mathbb C",
+        "\\F": "\\mathbb F"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "nguyen-tan-unitary-cayley-prime-zero-eigenvalue",
+      "scope": "in_scope",
+      "statement": "For every prime power $q$, the family in Theorem~\\ref{thm:hamming}\ngives prime singular examples whenever $q\\mid d$ and $(d,q)\\neq(2,2)$.\nIn particular, the binary examples are $Q_d$ for even $d\\geq4$;\nthe ternary example $H(3,3)$ has $27$ vertices, rank $15$ and\nnullity $12$. Odd prime powers give examples in odd characteristic\nand of odd vertex order.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Hamming extensions and a short proof from Mináč et al.'s cycle answering Nguyen and Tân's primeness question",
+      "toolchain": null,
+      "version": 2,
+      "work": "nguyen-tan-unitary-cayley-prime-zero-eigenvalue"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s5",
+      "contributor": null,
+      "identity": "collected:nguyen-tan-unitary-cayley-prime-zero-eigenvalue:2:s5",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "2eae85555e169007ff5548c46eb63cd2408f877f",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/2eae85555e169007ff5548c46eb63cd2408f877f/D5/S3/ArithUnits/NguyenTanUnitaryCayleyPrimeSpectrum.lean#L669"
+      },
+      "lineage": "collected:nguyen-tan-unitary-cayley-prime-zero-eigenvalue:s5",
+      "macros": {
+        "\\C": "\\mathbb C",
+        "\\F": "\\mathbb F"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "nguyen-tan-unitary-cayley-prime-zero-eigenvalue",
+      "scope": "in_scope",
+      "statement": "Let $A$ be a finite abelian group, and let $\\widehat A$ be its\ncomplex character group. Suppose $\\mathcal K$ partitions $A$,\n$\\mathcal X$ partitions $\\widehat A$, $|\\mathcal K|=|\\mathcal X|$,\nand $\\sigma_X=\\sum_{\\chi\\in X}\\chi$ is constant on each\n$K\\in\\mathcal K$ for every $X\\in\\mathcal X$.\nThen, for each $K\\in\\mathcal K$, the sum $\\sum_{a\\in K}\\chi(a)$\nis independent of $\\chi\\in X$ for every fixed $X\\in\\mathcal X$.\nIn particular, Remark 2.2 is answered affirmatively, even without\nthe additional symmetry assumption on $\\mathcal K$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Hamming extensions and a short proof from Mináč et al.'s cycle answering Nguyen and Tân's primeness question",
+      "toolchain": null,
+      "version": 2,
+      "work": "nguyen-tan-unitary-cayley-prime-zero-eigenvalue"
+    }
+  ]
+}

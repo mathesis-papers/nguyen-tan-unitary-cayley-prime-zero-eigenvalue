@@ -1,0 +1,373 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[colorlinks=true,urlcolor=blue,citecolor=blue,linkcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newcommand{\F}{\mathbb F}
+\newcommand{\C}{\mathbb C}
+\title{Hamming extensions and a short proof from Min\'a\v{c} et al.'s cycle\newline
+answering Nguyen and T\^an's primeness question}
+\author{Haobo Ma\\{\small ChronoAI Pte Ltd, Singapore}
+\and Wenlin Zhang\\{\small National University of Singapore}\\
+{\small ChronoAI Pte Ltd, Singapore}}
+\date{November 19, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Using the cycle example of Min\'a\v{c}, Muller, Nguyen and T\^an
+(2022, Corollary 2.5), we give a short negative answer to Nguyen and
+T\^an's Question 4.17 (arXiv:2508.10348v1, Section 4.3, p.~19):
+$\Gamma(\mathbb Z/8\mathbb Z,\{1,-1\})=C_8$ is prime, connected and
+anti-connected, with adjacency nullity two. More generally, $C_n$ has
+these graph properties for $n\geq5$ and is singular exactly when $4\mid n$.
+Extending Chen's binary polynomial construction with the tensor spectrum
+described by Sander, we realize every Hamming graph $H(d,q)$ over a
+prime-power alphabet as a subgroup-unit Cayley graph of a Frobenius group
+algebra. For $d\geq2$, except $(d,q)=(2,2)$, it is prime and
+anti-connected; it is singular exactly when $q\mid d$, with nullity
+$\binom d{d(q-1)/q}(q-1)^{d(q-1)/q}$.
+These examples also answer Question 2.20 of arXiv:2603.21239v1 negatively.
+Finally, a short proof of Hendrickson's duality answers the
+supercharacter-axiom question in Remark 2.2 of the first source affirmatively.
+\end{abstract}
+
+\section{The question and an eight-vertex answer}
+For a finite commutative ring $R$ with identity and a subgroup
+$U\leq R^\times$ containing $-1$, let $\Gamma(R,U)$ be the simple
+graph on $R$ in which distinct $a,b$ are adjacent when $a-b\in U$.
+A graph is \emph{anti-connected} if its complement is connected.
+A vertex set $M$ is \emph{homogeneous} if every vertex outside $M$
+is adjacent to all or none of $M$. A graph is \emph{prime} if no
+homogeneous set has size between $2$ and $|V|-1$.
+A finite ring of characteristic $n$ is \emph{Frobenius} in the convention
+of~\cite[Section 4.1]{NT} if it admits a $\mathbb Z/n\mathbb Z$-linear
+functional to $\mathbb Z/n\mathbb Z$ whose kernel contains no nonzero ideal.
+
+For Frobenius rings, Nguyen and T\^an~\cite[Question 4.17]{NT} ask,
+assuming that the graph and its complement are connected, whether it is prime
+if and only if zero is absent from its adjacency spectrum. Their later
+Question 2.20~\cite[Section 2.2.4, p.~9]{NT26} asks whether primeness
+implies nonsingularity for finite rings. Both answers are no, already
+for the eight-vertex cycle. This example is the generalized Paley graph
+$P_8$ in Min\'a\v{c} et al.~\cite[Corollary 2.5 and Theorem 3.5]{MMNT};
+those results identify the cycle and its spectrum. The primeness
+argument below is self-contained. Alternatively, their nullity two,
+together with Chudnovsky et al.'s nullity bound~\cite[Corollary 4.3]{CC},
+gives the same conclusion. Thus the cycle answer follows from earlier
+constructions and results, rather than requiring a new graph.
+
+\begin{lemma}\label{lem:twins}
+A connected triangle-free graph with no distinct vertices having the
+same open neighborhood is prime.
+\end{lemma}
+\begin{proof}
+If a proper homogeneous set $M$ contains an edge, every outside vertex
+adjacent to any member of $M$ is adjacent to both ends of that edge,
+creating a triangle. Hence there are no edges between $M$ and its
+complement, contrary to connectedness. Thus a proper homogeneous set
+is independent. If it has two members, they have the same outside
+neighbors and no inside neighbors, contradicting the hypothesis.
+\end{proof}
+
+\begin{theorem}\label{thm:cycles}
+For every $n\geq5$, $R=\mathbb Z/n\mathbb Z$ is Frobenius and
+$U=\{1,-1\}$ is a subgroup of its units. The graph $\Gamma(R,U)=C_n$
+is connected, anti-connected and prime. Its adjacency nullity is two
+when $4\mid n$, and zero otherwise. In particular, every $C_{4m}$,
+$m\geq2$, answers both primeness questions negatively.
+\end{theorem}
+\begin{proof}
+The identity functional on $R$ has zero kernel, proving the Frobenius
+property. The graph is the cycle with edges $a\sim a\pm1$.
+In its complement, each original edge $a\sim a+1$ can be replaced by
+the path $a,a+3,a+1$, since neither $2$ nor $3$ is $\pm1$ modulo
+$n\geq5$. Thus the complement is connected.
+
+The cycle is triangle-free and has no equal open neighborhoods for
+$n\geq5$. Indeed, if a vertex $b\neq0$ had neighborhood
+$\{-1,1\}$, then $b=2$ or $b=-2$ because it is adjacent to $1$ or
+$-1$. Equality of both neighbors would force $n=4$.
+Lemma~\ref{lem:twins} therefore proves primeness.
+
+For a complex vector $v=(v_a)_{a\in\mathbb Z/n\mathbb Z}$, the
+equation $Av=0$ is $v_{a+1}=-v_{a-1}$. All solutions on the integer
+line have the repeating pattern $(s,t,-s,-t)$.
+If $4\mid n$, both parameters are free. If $n\equiv2\pmod4$,
+periodicity forces $s=-s$ and $t=-t$; if $n$ is odd, it forces both
+$s=t$ and $s=-t$. Over $\C$ these conditions give $s=t=0$.
+This proves the nullity statement. For $n=8$, the two repeating
+patterns $(1,0,-1,0)$ and $(0,1,0,-1)$ give an explicit nullspace
+basis and rank $8-2=6$.
+\end{proof}
+
+\section{A Hamming family over every finite field}
+The cube construction also fits a larger family. Let $q=p^r$ be a
+prime power, let $\F_q$ be the field with $q$ elements, and let $G$
+be a finite abelian group of order $d$, written additively with identity
+$0_G$. Define the group algebra
+\[
+ R=\F_q[G]=\left\{\sum_{g\in G}a_g e_g:a_g\in\F_q\right\},
+ \qquad e_g e_h=e_{g+h},\qquad 1_R=e_{0_G},
+\]
+with coefficientwise addition and bilinear multiplication. Put
+\[
+ U=\{c e_g:c\in\F_q^\times,\ g\in G\}.
+\]
+The inverse of $ce_g$ is $c^{-1}e_{-g}$; hence $U$ is a subgroup of
+$R^\times$ of order $d(q-1)$ containing $-1_R$.
+The \emph{Hamming graph} $H(d,q)$ has vertex set $\F_q^G$ and
+edges joining vectors differing in exactly one coordinate. Coefficients
+identify $\Gamma(R,U)$ with $H(d,q)$.
+
+For $q=2$ and cyclic $G$, this is Chen's polynomial construction
+$\F_2[x]/(x^d-1)$ with connection set $\{1,x,\ldots,x^{d-1}\}$:
+take the ideal $(x^d+1)$ in~\cite[Section 2, equation (4), p.~5]{Chen}.
+The coefficient map makes its graph the cube $Q_d=H(d,2)$.
+The tensor spectral method below is the one described in
+Sander~\cite[Theorem 2.2 and Lemma 3.1]{Sander}; its cubelike
+character version appears in Cheung--Godsil~\cite[Section 3]{CG}.
+Nguyen's recent scalar-orbit character formula~\cite[Proposition 2.2]{Matrix}
+also applies to this scalar-stable connection set.
+The extension here is the scalar-basis unit subgroup over every
+$\F_q$, with an exact singularity criterion and its application
+to the two questions.
+
+\begin{theorem}\label{thm:hamming}
+Let $q$ be a prime power and $G$ a finite abelian group of order $d$.
+The ring $R=\F_q[G]$ is Frobenius, and $\Gamma(R,U)\cong H(d,q)$
+has adjacency eigenvalues
+\[
+ \lambda_k=d(q-1)-qk,\qquad
+ \text{multiplicity }b_k=\binom dk(q-1)^k,\qquad 0\leq k\leq d.
+\]
+If $d\geq2$ and $(d,q)\neq(2,2)$, this graph is connected,
+anti-connected and prime. It is singular exactly when $q\mid d$,
+and then its nullity is $b_{d(q-1)/q}<q^d/2$.
+\end{theorem}
+\begin{proof}
+Choose a nonzero $\F_p$-linear map $\ell:\F_q\to\F_p$ and set
+$\psi(a)=\ell(a_{0_G})$. Given $a\neq0$, choose $g$ with
+$a_g\neq0$, and choose $c\in\F_q$ such that $\ell(ca_g)\neq0$;
+this is possible since multiplication by $a_g$ is bijective.
+Then $\psi(ce_{-g}a)\neq0$. Thus no nonzero ideal lies in
+$\ker\psi$, as required.
+
+Write $K_q$ for the complete graph on $\F_q$, with adjacency matrix
+$B$. Its constant functions have eigenvalue $q-1$, and its
+$(q-1)$-dimensional subspace of functions with sum zero has
+eigenvalue $-1$, since
+$(Bf)(a)=\sum_b f(b)-f(a)$. The adjacency matrix of $H(d,q)$
+is the sum of $d$ tensor operators, each applying $B$ in one
+coordinate and the identity in the others. Choose, in each coordinate,
+the constant function and a basis of the zero-sum subspace. Their
+tensor products form a basis on $\F_q^G$. A product using $k$
+zero-sum factors has eigenvalue $(d-k)(q-1)-k$, and there are
+$\binom dk(q-1)^k$ such products. This proves the entire spectrum.
+Zero occurs exactly when $k=d(q-1)/q$ is an integer, equivalently
+$q\mid d$, because $\gcd(q,q-1)=1$.
+
+Changing one coordinate at a time proves connectedness. For $d\geq3$,
+a coordinate edge from $v$ to $w$ can be replaced in the complement
+by $v,z,w$, where $z$ differs from $v$ in two coordinates other
+than the changed coordinate. The two distances are two and three.
+For $d=2$ and $q\geq3$, take $z$ different from both endpoint
+values in the changed coordinate and different from their common
+value in the other coordinate. Both distances are two. Hence the
+complement is connected in the stated range.
+
+To prove primeness, use the nullity bound of Chudnovsky et al.
+\cite[Corollary 4.3]{CC}: a nonprime connected, anti-connected
+Cayley graph on a commutative ring with its connection subgroup
+in the units has nullity at least half its order. If the graph is
+nonsingular, that bound already proves primeness. Otherwise write
+$d=qm$ and $k=(q-1)m$. The adjacent multiplicities satisfy
+\[
+ \frac{b_{k-1}}{b_k}=\frac{m}{m+1},\qquad
+ \frac{b_{k+1}}{b_k}=\frac{(q-1)m}{(q-1)m+1}.
+\]
+Their sum exceeds one unless $(q,m)=(2,1)$, precisely the excluded
+case $(d,q)=(2,2)$. Consequently
+$q^d=\sum_j b_j\geq b_{k-1}+b_k+b_{k+1}>2b_k$.
+The bound therefore proves primeness also in the singular case.
+\end{proof}
+
+The primeness of these Hamming graphs also follows from the later
+Cartesian-product theorem of El Amri, Boudabbous and
+Yaich~\cite[Theorem 1.2]{Cartesian}: a Cartesian product of two
+nontrivial connected graphs is prime if one factor has at least three
+vertices. Apply it to $K_q\mathbin\square H(d-1,q)$; for $q=2$
+and $d\geq3$, the second factor has at least four vertices.
+
+\begin{corollary}\label{cor:examples}
+For every prime power $q$, the family in Theorem~\ref{thm:hamming}
+gives prime singular examples whenever $q\mid d$ and $(d,q)\neq(2,2)$.
+In particular, the binary examples are $Q_d$ for even $d\geq4$;
+the ternary example $H(3,3)$ has $27$ vertices, rank $15$ and
+nullity $12$. Odd prime powers give examples in odd characteristic
+and of odd vertex order.
+\end{corollary}
+\begin{proof}
+Apply the theorem. For $q=d=3$, the spectrum is
+$6,3,0,-3$ with multiplicities $1,6,12,8$.
+For every odd $q$, take $d=q$, so $q^d$ is odd.
+\end{proof}
+
+For cyclic $G$, the map $x\mapsto e_1$ identifies the ring with
+$\F_q[x]/(x^d-1)$: the $d$ residue monomials map to the $d$
+group-algebra basis elements. Thus the binary case $d=4$ is
+$R=\F_2[x]/(x^4-1)$, $U=\{1,x,x^2,x^3\}$, with spectrum
+$4,2,0,-2,-4$ of multiplicities $1,4,6,4,1$ and nullity six.
+Here $Q_4$ is the first qualifying even cube, whereas $C_8$ above
+has fewer vertices. No minimality among all ring graphs is needed.
+For the boundary cases, $H(1,q)$ is complete, and the complement
+of $H(2,2)=C_4$ is disconnected; its opposite pairs are homogeneous.
+
+The hypotheses of the source's positive cases remain important.
+For example, the singular examples have $p\mid d(q-1)=|U|$,
+so they do not satisfy~\cite[Proposition 4.20]{NT}.
+For a converse not asserted there, divisibility $p\mid|U|$ does
+not imply singularity: $q=4,d=2$ gives $|U|=6$, characteristic two,
+and spectrum $6,2,-2$, with multiplicities $1,6,9$.
+
+\section{Hendrickson duality and the neighboring axiom question}
+The question in~\cite[Remark 2.2, p.~4]{NT} asks whether condition
+(4) of its Definition 2.1 follows from the other conditions. It does;
+this is the duality in Hendrickson~\cite[Theorem 10.3 and the paragraph
+following Corollary 10.5]{Hendrickson}. We include the short Fourier proof.
+
+\begin{corollary}\label{cor:duality}
+Let $A$ be a finite abelian group, and let $\widehat A$ be its
+complex character group. Suppose $\mathcal K$ partitions $A$,
+$\mathcal X$ partitions $\widehat A$, $|\mathcal K|=|\mathcal X|$,
+and $\sigma_X=\sum_{\chi\in X}\chi$ is constant on each
+$K\in\mathcal K$ for every $X\in\mathcal X$.
+Then, for each $K\in\mathcal K$, the sum $\sum_{a\in K}\chi(a)$
+is independent of $\chi\in X$ for every fixed $X\in\mathcal X$.
+In particular, Remark 2.2 is answered affirmatively, even without
+the additional symmetry assumption on $\mathcal K$.
+\end{corollary}
+\begin{proof}
+Let $V$ be the space of complex functions constant on every block
+of $\mathcal K$. It has dimension $|\mathcal K|$.
+The functions $\sigma_X$ lie in $V$ and are linearly independent:
+in the character basis their nonempty supports are disjoint.
+They therefore form a basis of $V$. For the indicator $1_K$,
+write $1_K=\sum_X c_X\sigma_X$.
+With inner product
+$\langle f,h\rangle=|A|^{-1}\sum_{a\in A}f(a)\overline{h(a)}$,
+character orthogonality gives, for $\chi\in X$,
+\[
+ \frac1{|A|}\sum_{a\in K}\overline{\chi(a)}
+ =\langle1_K,\chi\rangle=c_X.
+\]
+Conjugating proves the required constancy. Neither singleton-zero
+nor symmetry of the blocks is used in this argument.
+\end{proof}
+
+\section{Coverage and mathematical evidence}
+\noindent Unqualified source items in the following table refer to~\cite{NT}.
+\begin{center}\small
+\begin{tabular}{@{}p{.25\linewidth}p{.69\linewidth}@{}}
+\toprule
+Source item & Coverage \\
+\midrule
+Question 4.17 & Answered: no. Theorem~\ref{thm:cycles} gives $C_8$;
+Theorem~\ref{thm:hamming} gives the prime-power family. The cycle and
+binary constructions have prior sources~\cite{MMNT,Chen}.\\
+\cite{NT26}, Question 2.20 & Answered: no, by the same commutative examples.\\
+Remark 2.2 & Answered: yes. Reproved in Corollary~\ref{cor:duality};
+prior proof: Hendrickson (2009), Theorem 10.3.\\
+Proposition 4.16; \cite{NT26}, Proposition 2.19 & Prior proof cited;
+the nonprime-to-singular implication is unchanged.\\
+Proposition 4.18; \cite{NT26}, Proposition 2.21 & Prior proof cited;
+the full-unit-group case is unchanged.\\
+Proposition 4.20 & Prior proof cited. Its coprime-order hypothesis
+excludes our singular Hamming graphs. A converse is not asserted in
+the source; it fails for $H(2,4)$.\\
+Propositions 4.21--4.22 & Not covered beyond their cited specialized
+positive cases; their Jacobi-symbol and power-unit hypotheses are
+not replaced by arbitrary subgroups.\\
+Prime-power Hamming family & Not posed; proved in
+Theorem~\ref{thm:hamming}, using the prior tensor spectrum and
+nullity bound~\cite{Sander,CC}.\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection*{Written, formal and finite scope}
+The cycle proof, prime-power Hamming theorem, complete spectra and
+multiplicities, polynomial descriptions and duality corollary have the
+written proofs above. The
+\href{https://github.com/the-omega-institute/trureturing/blob/2eae85555e169007ff5548c46eb63cd2408f877f/D5/S3/ArithUnits/NguyenTanUnitaryCayleyPrimeSpectrum.lean#L669}{pinned Lean declaration
+\texttt{result}} states the negation of the affirmative form of
+Question 4.17. Its
+\href{https://github.com/the-omega-institute/trureturing/blob/2eae85555e169007ff5548c46eb63cd2408f877f/D5/S3/ArithUnits/NguyenTanUnitaryCayleyPrimeSpectrum.lean#L631}{supporting lemma
+\texttt{group\_algebra\_counterexample}} covers the binary Frobenius
+group algebra, both connectivity properties, primeness and a zero
+eigenvalue for finite abelian groups of even order at least four;
+\href{https://github.com/the-omega-institute/trureturing/blob/2eae85555e169007ff5548c46eb63cd2408f877f/D5/S3/ArithUnits/NguyenTanUnitaryCayleyPrimeSpectrum.lean#L650}{\texttt{even\_cyclic\_family}}
+specializes to cyclic groups. The exported contradiction uses order four.
+The formal statement is restricted to this binary family; it does not
+include the cycle construction, the prime-power extension, complete
+multiplicities or the duality corollary. The accompanying
+\texttt{verify.py} gives exact finite checks of cycles, tensor
+eigenvectors, explicit rings and character partitions, with parameter
+ranges and results in \texttt{verification.json}; these finite checks
+are separate from the general proofs.
+
+\begin{thebibliography}{10}
+\small
+\setlength{\itemsep}{2pt}
+\bibitem{NT} T.~T.~Nguyen and N.~D.~T\^an,
+\emph{Supercharacters of finite abelian groups and applications to spectra
+of $U$-unitary Cayley graphs},
+\href{https://arxiv.org/abs/2508.10348v1}{arXiv:2508.10348v1} (2025).
+\bibitem{NT26} T.~T.~Nguyen and N.~D.~T\^an,
+\emph{On $U$-unitary Cayley graphs over finite rings},
+\href{https://arxiv.org/abs/2603.21239v1}{arXiv:2603.21239v1} (2026).
+\bibitem{MMNT} J.~Min\'a\v{c}, L.~Muller, T.~T.~Nguyen and N.~D.~T\^an,
+\emph{On the Paley graph of a quadratic character},
+\href{https://arxiv.org/abs/2212.02005v1}{arXiv:2212.02005v1} (2022),
+Corollary 2.5 and Theorem 3.5; the cycle statement is Corollary 2.6 in
+\href{https://arxiv.org/abs/2212.02005v2}{version 2} (2023).
+\bibitem{Chen} H.~Chen,
+\emph{Quotients of polynomial rings and regular $t$-balanced Cayley maps
+on abelian groups},
+\href{https://arxiv.org/abs/1407.5295v5}{arXiv:1407.5295v5} (2017),
+Section 2, equation (4); first version (2014), Notation 2.2.
+\bibitem{Sander} T.~Sander,
+\emph{Eigenspaces of Hamming graphs and unitary Cayley graphs},
+Ars Math. Contemp. \textbf{3} (2010), 13--19,
+\href{https://doi.org/10.26493/1855-3974.100.7f8}{doi:10.26493/1855-3974.100.7f8}.
+\bibitem{CG} W.-C.~Cheung and C.~Godsil,
+\emph{Perfect state transfer in cubelike graphs},
+Linear Algebra Appl. \textbf{435} (2011), 2468--2474,
+\href{https://doi.org/10.1016/j.laa.2011.04.022}{doi:10.1016/j.laa.2011.04.022};
+\href{https://arxiv.org/abs/1010.4721v2}{arXiv:1010.4721v2}, Section 3.
+\bibitem{CC} M.~Chudnovsky, M.~Cizek, L.~Crew, J.~Min\'a\v{c},
+T.~T.~Nguyen, S.~Spirkl and N.~D.~T\^an,
+\emph{On prime Cayley graphs},
+\href{https://arxiv.org/abs/2401.06062v1}{arXiv:2401.06062v1} (2024),
+Corollary 4.3.
+\bibitem{Hendrickson} A.~O.~F.~Hendrickson,
+\emph{Construction of supercharacter theories of finite groups},
+\href{https://arxiv.org/abs/0905.3538v1}{arXiv:0905.3538v1} (2009),
+Theorem 10.3, p.~19, and the paragraph following Corollary 10.5, p.~20.
+\bibitem{Cartesian} M.~El Amri, Y.~Boudabbous and N.~Yaich,
+\emph{On primality of Cartesian product of graphs},
+Arab J. Math. Sci. \textbf{31} (2025), 143--152
+(published online July 16, 2024),
+\href{https://doi.org/10.1108/AJMS-09-2023-0023}{doi:10.1108/AJMS-09-2023-0023}.
+\bibitem{Matrix} T.~T.~Nguyen,
+\emph{Spectra of gcd-graphs over a matrix ring},
+\href{https://arxiv.org/abs/2611.15026v2}{arXiv:2611.15026v2} (2026),
+Proposition 2.2.
+\end{thebibliography}
+\medskip\noindent\small
+\copyright\ 2026 Haobo Ma and Wenlin Zhang.
+Licensed under \href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0}.
+\end{document}
