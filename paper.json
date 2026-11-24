@@ -28,9 +28,9 @@
         "name": "Wenlin Zhang"
       }
     ],
-    "concept_doi": null,
+    "concept_doi": "10.5281/zenodo.24488697",
     "current_version": 2,
-    "doi": null,
+    "doi": "10.5281/zenodo.24488698",
     "lean_source": {
       "revision": "2eae85555e169007ff5548c46eb63cd2408f877f",
       "url": "https://github.com/the-omega-institute/trureturing/blob/2eae85555e169007ff5548c46eb63cd2408f877f/D5/S3/ArithUnits/NguyenTanUnitaryCayleyPrimeSpectrum.lean#L669"
